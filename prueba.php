@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>        
-        <form action="prueba2.php" method="post" enctype="application/x-www-form-urlencoded">
+        <form action="prueba2.php" method="get" enctype="application/x-www-form-urlencoded">
             <input name="param1[]" value="hola">
             <input name="param1[]" value="mundo">
             <select multiple name="param2[]" size="4">
@@ -22,5 +22,9 @@
             </select>
             <input type="submit" value="Enviar">
         </form>
+        <form action="prueba2.php" method="post" enctype="multipart/form-data">
+			<input type="file" name="archivo" />
+			<input type="submit" />
+		</form>
     </body>
 </html>
